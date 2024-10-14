@@ -1,6 +1,6 @@
 function main()
 {
-    document.body.setAttribute("style", `background-color:${APP_CONFIG.backgroundColor}`);
+    document.body.setAttribute("style", `background-color:${AppConfig.backgroundColor}`);
     let canvasDom = document.getElementById("canvas");
 
     if (canvasDom)
@@ -9,23 +9,23 @@ function main()
         canvasDom.setAttribute("height", screen.height);
     }
 
-    const r = new rive.Rive({
-        src: APP_CONFIG.wallpaper,
+    const riveInstance = new rive.Rive({
+        src: AppConfig.wallpaper,
         canvas: canvasDom,
         autoplay: true,
-        artboard: APP_CONFIG.artboard,
-        stateMachines: APP_CONFIG.stateMachines,
+        artboard: AppConfig.artboard,
+        stateMachines: AppConfig.stateMachines,
         onLoad: () => {
-            r.resizeDrawingSurfaceToCanvas();
-            if (APP_CONFIG.enableFPSCounter) {
-                r.enableFPSCounter();
+            riveInstance.resizeDrawingSurfaceToCanvas();
+            if (AppConfig.enableFPSCounter) {
+                riveInstance.enableFPSCounter();
             }
         },
     });
 
     window.onbeforeunload = (event) => {
-        if (r) {
-            r.cleanup();
+        if (riveInstance) {
+            riveInstance.cleanup();
         }
     };
 }

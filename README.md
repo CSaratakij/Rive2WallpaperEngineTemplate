@@ -1,5 +1,5 @@
 # Rive2WallpaperEngine
-- wallpaper engine template to import .riv into live wallpaper
+- wallpaper engine web-based wallpaper template to import .riv into live wallpaper
 
 # Getting Started
 - TODO
