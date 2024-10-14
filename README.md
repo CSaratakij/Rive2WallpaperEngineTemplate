@@ -3,7 +3,7 @@
 
 ## Getting Started
 1) clone this repos
-2) start web server to quickly iterate config.js
+2) start web server to quickly iterate config.js (not required)
 3) edit config.js
 4) follow the web-based wallpaper engine [getting started](https://docs.wallpaperengine.io/en/web/first/gettingstarted.html) to import template to wallpaper engine project
 
