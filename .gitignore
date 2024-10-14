@@ -1,2 +1,4 @@
 # Rive runtime
 *.riv
+assets/*.riv
+assets/
