@@ -14,5 +14,5 @@
 - backgroundColor : background color in case rive file not fit the whole screen
 
 ## Note :
-- use rive canvas runtime
+- use rive canvas runtime (cdn version)
 - tested with wallpaper engine verison 2.5.28
